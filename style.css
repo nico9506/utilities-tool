@@ -1,0 +1,18 @@
+:root {
+    --navbar-bg-color: #e3f2fd;
+    --footer-bg-color: #b6e0fe;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+}
