@@ -17,49 +17,218 @@
     <body>
         <nav class="navbar navbar-expand-md sticky-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Another action</a
+                                    >
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true"
+                                >Disabled</a
+                            >
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-info" type="submit">Search</button>
-                </form>
-              </div>
+                    <form class="d-flex" role="search">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <button class="btn btn-outline-info" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
             </div>
-          </nav>
+        </nav>
 
-        <div class="container-fluid">
+        <div class="container-fluid bg-dark">
             <div class="row vh-100">
                 <div class="col"></div>
-                <div class="col-md-5 bg-primary">
-                    <div class="container bg-info">test0</div>
+
+                <div class="col-lg-5 bg-primary">
+                    <div class="container bg-info">
+                        <div class="container-fluid weather-dashboard">
+                            <div class="row">
+                                <h4 class="col-auto">
+                                    Southbank, Melbourne VIC
+                                </h4>
+                                <h5 class="col-auto align-text-bottom">
+                                    Updated 7:00PM AEST
+                                </h5>
+                            </div>
+
+                            <div class="row">
+                                <img
+                                    class="col-4 weather-img"
+                                    src=""
+                                    alt="weather condition icon"
+                                />
+                                <div class="col-8">
+                                    <div class="row">
+                                        <h1 class="col-auto">22°c</h1>
+                                        <h2 class="col">Partially Cloudy</h2>
+                                    </div>
+                                    <div class="row">
+                                        <p>Expected showers this evening</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col feels-like-box">
+                                    <div
+                                        class="row justify-content-center label-box"
+                                    >
+                                        FEELS LIKE
+                                    </div>
+                                    <div
+                                        class="row justify-content-center info-box"
+                                    >
+                                        20.7°c
+                                    </div>
+                                </div>
+                                <div class="col min-temp-box">
+                                    <div
+                                        class="row justify-content-center label-box"
+                                    >
+                                        MIN TEMP
+                                    </div>
+                                    <div
+                                        class="row justify-content-center info-box"
+                                    >
+                                        12°c
+                                    </div>
+                                </div>
+                                <div class="col max-temp-box">
+                                    <div
+                                        class="row justify-content-center label-box"
+                                    >
+                                        MAX TEMP
+                                    </div>
+                                    <div
+                                        class="row justify-content-center info-box"
+                                    >
+                                        25°C
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col indicator-box">
+                                    <div class="row label-box">HUMIDITY</div>
+                                    <div class="row info-box">55%</div>
+                                </div>
+                                <div class="col indicator-box">
+                                    <div class="row label-box">DEW POINT</div>
+                                    <div class="row info-box">6.7°C</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col indicator-box">
+                                    <div class="row label-box">WIND</div>
+                                    <div class="row info-box">N 11Km/h</div>
+                                </div>
+                                <div class="col indicator-box">
+                                    <div class="row abel-box">WIND GUST</div>
+                                    <div class="row info-box">18Km/h</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col indicator-box">
+                                    <div class="row label-box">
+                                        RAIN SINCE 9AM
+                                    </div>
+                                    <div class="row info-box">0.0mm</div>
+                                </div>
+                                <div class="col indicator-box">
+                                    <div class="row label-box">PRESSURE</div>
+                                    <div class="row info-box">1013.3hPa</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col indicator-box">
+                                    <div class="row label-box">
+                                        CHANCE OF RAIN
+                                    </div>
+                                    <div class="row info-box">70%</div>
+                                </div>
+                                <div class="col indicator-box">
+                                    <div class="row label-box">
+                                        AMOUNT OF RAIN
+                                    </div>
+                                    <div class="row info-box">1-5mm</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col indicator-box">
+                                    <div class="row label-box">
+                                        FIRE DANGER RATING
+                                    </div>
+                                    <div class="row info-box">No Rating</div>
+                                </div>
+                                <div class="col indicator-box">
+                                    <div class="row label-box">UV INDEX</div>
+                                    <div class="row info-box">Moderate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 bg-secondary">
-                    <div class="container bg-primary">test1</div>
+
+                <div class="col-lg-3 bg-secondary">
+                    <div class="container bg-primary"></div>
                 </div>
                 <div class="col"></div>
             </div>
