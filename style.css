@@ -4,6 +4,7 @@
     --feels-like-bg-color: #96ee98;
     --min-temp-bg-color: #96eeec;
     --max-temp-bg-color: #eecb96;
+    --indicator-bg-color: #fefed9;
 
     --text-label-color: #544d4d;
 
@@ -47,14 +48,15 @@ footer {
 }
 
 /********************************************************************/
-.label-box {
+.label-temp {
     font-size: var(--fs-sm);
     text-transform: uppercase;
     color: var(--text-label-color);
 }
 
-.info-box {
+.info-temp {
     font-size: var(--fs-lg);
+    font-weight: bold;
 }
 
 .feels-like-box {
@@ -70,7 +72,21 @@ footer {
 }
 
 .indicator-box {
-    margin: 0 0 0.5rem 0 !important;
+    margin: 0 0.5rem 0.5rem 0 !important;
     padding-left: 1rem !important;
-    border: 1px solid black;
+    background-color: var(--indicator-bg-color);
+}
+
+.indicator-icon {
+    font-size: var(--fs-xl);
+}
+
+.label-box {
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    color: var(--text-label-color);
+}
+
+.info-box {
+    font-size: var(--fs-md);
 }
