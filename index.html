@@ -13,6 +13,12 @@
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
             crossorigin="anonymous"
         />
+
+        <!-- FontAwesome -->
+        <script
+            src="https://kit.fontawesome.com/8b9c8ab9d4.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-md sticky-top">
@@ -97,32 +103,36 @@
             <div class="row vh-100">
                 <div class="col"></div>
 
-                <div class="col-lg-5 bg-primary">
+                <div class="col-xl-5 col-lg-7 col-md-8 bg-primary">
                     <div class="container bg-info">
                         <div class="container-fluid weather-dashboard">
                             <div class="row">
                                 <h4 class="col-auto">
                                     Southbank, Melbourne VIC
                                 </h4>
-                                <h5 class="col-auto align-text-bottom">
+                                <h5
+                                    id="updated-date"
+                                    class="col-auto align-text-bottom"
+                                >
                                     Updated 7:00PM AEST
                                 </h5>
                             </div>
 
                             <div class="row">
-                                <img
-                                    class="col-4 weather-img"
-                                    src=""
-                                    alt="weather condition icon"
-                                />
-                                <div class="col-8">
-                                    <div class="row">
-                                        <h1 class="col-auto">22°c</h1>
-                                        <h2 class="col">Partially Cloudy</h2>
-                                    </div>
-                                    <div class="row">
-                                        <p>Expected showers this evening</p>
-                                    </div>
+                                <i
+                                    id="weather-icon"
+                                    class="col-3 fa-solid fa-cloud-sun d-flex align-items-center justify-content-end"
+                                ></i>
+                                <div class="col-auto d-flex align-items-center">
+                                    <h1 id="current-temperature" class="m-0">22°C</h1>
+                                </div>
+                                <div class="col my-auto">
+                                    <h2 class="d-flex align-bottom m-0">
+                                        Partially Cloudy
+                                    </h2>
+                                    <p class="d-flex align-top m-0">
+                                        Expected showers this evening
+                                    </p>
                                 </div>
                             </div>
 
@@ -227,8 +237,10 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 bg-secondary">
-                    <div class="container bg-primary"></div>
+                <div class="col-xl-3 col-lg-3 col-md-3 bg-secondary">
+                    <div class="container bg-primary">
+                        Room to place more stuff
+                    </div>
                 </div>
                 <div class="col"></div>
             </div>
