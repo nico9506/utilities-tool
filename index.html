@@ -106,7 +106,7 @@
                 <div class="col-xl-5 col-lg-7 col-md-8 bg-primary">
                     <div class="container bg-info">
                         <div class="container-fluid weather-dashboard">
-                            <div class="row">
+                            <div class="row mt-4">
                                 <h4 class="col-auto">
                                     Southbank, Melbourne VIC
                                 </h4>
@@ -118,13 +118,15 @@
                                 </h5>
                             </div>
 
-                            <div class="row">
+                            <div class="row my-2">
                                 <i
                                     id="weather-icon"
                                     class="col-3 fa-solid fa-cloud-sun d-flex align-items-center justify-content-end"
                                 ></i>
                                 <div class="col-auto d-flex align-items-center">
-                                    <h1 id="current-temperature" class="m-0">22°C</h1>
+                                    <h1 id="current-temperature" class="m-0">
+                                        22°C
+                                    </h1>
                                 </div>
                                 <div class="col my-auto">
                                     <h2 class="d-flex align-bottom m-0">
@@ -136,8 +138,9 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col feels-like-box">
+                            <div class="row mb-4">
+                                <div class="col"></div>
+                                <div class="col-3 feels-like-box">
                                     <div
                                         class="row justify-content-center label-box"
                                     >
@@ -146,10 +149,10 @@
                                     <div
                                         class="row justify-content-center info-box"
                                     >
-                                        20.7°c
+                                        20.7°C
                                     </div>
                                 </div>
-                                <div class="col min-temp-box">
+                                <div class="col-3 min-temp-box">
                                     <div
                                         class="row justify-content-center label-box"
                                     >
@@ -158,10 +161,10 @@
                                     <div
                                         class="row justify-content-center info-box"
                                     >
-                                        12°c
+                                        12°C
                                     </div>
                                 </div>
-                                <div class="col max-temp-box">
+                                <div class="col-3 max-temp-box">
                                     <div
                                         class="row justify-content-center label-box"
                                     >
@@ -173,65 +176,102 @@
                                         25°C
                                     </div>
                                 </div>
+                                <div class="col"></div>
                             </div>
 
+                            <!-- INDICATORS -->
                             <div class="row">
-                                <div class="col indicator-box">
-                                    <div class="row label-box">HUMIDITY</div>
-                                    <div class="row info-box">55%</div>
-                                </div>
-                                <div class="col indicator-box">
-                                    <div class="row label-box">DEW POINT</div>
-                                    <div class="row info-box">6.7°C</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col indicator-box">
-                                    <div class="row label-box">WIND</div>
-                                    <div class="row info-box">N 11Km/h</div>
-                                </div>
-                                <div class="col indicator-box">
-                                    <div class="row abel-box">WIND GUST</div>
-                                    <div class="row info-box">18Km/h</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col indicator-box">
-                                    <div class="row label-box">
-                                        RAIN SINCE 9AM
+                                <div class="col-3"></div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                HUMIDITY
+                                            </div>
+                                            <div class="row info-box">55%</div>
+                                        </div>
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                DEW POINT
+                                            </div>
+                                            <div class="row info-box">
+                                                6.7°C
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row info-box">0.0mm</div>
-                                </div>
-                                <div class="col indicator-box">
-                                    <div class="row label-box">PRESSURE</div>
-                                    <div class="row info-box">1013.3hPa</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col indicator-box">
-                                    <div class="row label-box">
-                                        CHANCE OF RAIN
+                                    <div class="row">
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                WIND
+                                            </div>
+                                            <div class="row info-box">
+                                                N 11Km/h
+                                            </div>
+                                        </div>
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                WIND GUST
+                                            </div>
+                                            <div class="row info-box">
+                                                18Km/h
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row info-box">70%</div>
-                                </div>
-                                <div class="col indicator-box">
-                                    <div class="row label-box">
-                                        AMOUNT OF RAIN
+                                    <div class="row">
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                RAIN SINCE 9AM
+                                            </div>
+                                            <div class="row info-box">
+                                                0.0mm
+                                            </div>
+                                        </div>
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                PRESSURE
+                                            </div>
+                                            <div class="row info-box">
+                                                1013.3hPa
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row info-box">1-5mm</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col indicator-box">
-                                    <div class="row label-box">
-                                        FIRE DANGER RATING
+                                    <div class="row">
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                CHANCE OF RAIN
+                                            </div>
+                                            <div class="row info-box">70%</div>
+                                        </div>
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                AMOUNT OF RAIN
+                                            </div>
+                                            <div class="row info-box">
+                                                1-5mm
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row info-box">No Rating</div>
+                                    <div class="row">
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                FIRE DANGER RATING
+                                            </div>
+                                            <div class="row info-box">
+                                                No Rating
+                                            </div>
+                                        </div>
+                                        <div class="col indicator-box">
+                                            <div class="row label-box">
+                                                UV INDEX
+                                            </div>
+                                            <div class="row info-box">
+                                                Moderate
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col indicator-box">
-                                    <div class="row label-box">UV INDEX</div>
-                                    <div class="row info-box">Moderate</div>
-                                </div>
+
+                                <div class="col"></div>
                             </div>
                         </div>
                     </div>
